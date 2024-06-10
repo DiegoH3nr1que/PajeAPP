@@ -5,8 +5,8 @@
 
     <!-- Em seguida, adicione a imagem que deseja exibir -->
     <item
-        android:drawable="@drawable/add"
+        android:drawable="@drawable/add_white"
         android:gravity="center"
         android:width="40dp"
-        android:height="40dp" />
+        android:height="40dp"/>
 </layer-list>

@@ -86,6 +86,8 @@
                 android:gravity="center_horizontal"
                 android:orientation="vertical">
 
+
+
                 <TextView
                     android:id="@+id/tvIncome"
                     android:layout_width="wrap_content"
@@ -137,9 +139,9 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="90dp"
-        android:layout_marginStart="55dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="15dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginEnd="15dp"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -163,7 +165,7 @@
         </LinearLayout>
 
         <Space
-            android:layout_width="20dp"
+            android:layout_width="30dp"
             android:layout_height="0dp"></Space>
 
         <LinearLayout
@@ -187,7 +189,7 @@
         </LinearLayout>
 
         <Space
-            android:layout_width="20dp"
+            android:layout_width="30dp"
             android:layout_height="0dp"></Space>
 
         <LinearLayout
@@ -199,7 +201,7 @@
                 android:id="@+id/button3"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:background="@drawable/add_image"
+                android:background="@drawable/add_image1"
                 android:text="" />
 
             <TextView
@@ -211,7 +213,7 @@
         </LinearLayout>
 
         <Space
-            android:layout_width="20dp"
+            android:layout_width="30dp"
             android:layout_height="0dp"></Space>
 
         <LinearLayout
@@ -261,10 +263,10 @@
             android:layout_height="100dp"
             android:layout_gravity="center_horizontal"
             android:contentDescription="@string/category"
-            android:src="@drawable/piechart" />
+            android:src="@drawable/piechart_image" />
 
         <Space
-            android:layout_width="20dp"
+            android:layout_width="0dp"
             android:layout_height="0dp"></Space>
 
         <LinearLayout
@@ -496,7 +498,7 @@
                 android:layout_weight="1"
                 android:text="06:99"
                 android:textSize="16sp" />
-
+            <!--Tubarão da a bunda-->
             <TextView
                 android:id="@+id/tvLunchAmount"
                 android:layout_width="0dp"
@@ -536,5 +538,4 @@
                 android:textSize="16sp" />
         </LinearLayout>
     </LinearLayout>
-
 </LinearLayout>
