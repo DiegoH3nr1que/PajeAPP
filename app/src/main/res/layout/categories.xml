@@ -269,6 +269,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="87dp"
             android:layout_marginTop="33dp"
+            android:fontFamily="@font/montserrat_medium"
             android:text="@string/category"
             android:textColor="@color/white"
             android:textSize="20sp"
