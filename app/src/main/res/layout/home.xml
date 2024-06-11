@@ -67,7 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="22dp"
             android:layout_gravity="center_horizontal"
-            android:text="R$ 3.500,00"
+            android:text="R$ 2.300,00"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -84,26 +84,41 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
+                <Button
+                    android:id="@+id/button13"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/dollar_img"
+                    android:text="" />
 
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/tvIncome"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="13dp"
-                    android:text="Receita"
-                    android:textColor="@android:color/holo_green_dark"
-                    android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/tvIncome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="13dp"
+                        android:text="Receita"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="16sp" />
 
-                <TextView
-                    android:id="@+id/tvIncomeAmount"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="R$ 3.500,00"
-                    android:textColor="@android:color/holo_green_dark"
-                    android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/tvIncomeAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="R$ 3.500,00"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="16sp" />
+                </LinearLayout>
             </LinearLayout>
 
             <!-- Segundo par de TextViews -->
@@ -112,24 +127,41 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/tvExpense"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="13dp"
-                    android:text="Despesas"
-                    android:textColor="@android:color/holo_red_dark"
-                    android:textSize="16sp" />
+                <Button
+                    android:id="@+id/button14"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/dollar_red_img"
+                    android:text="" />
 
-                <TextView
-                    android:id="@+id/tvExpenseAmount"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="R$ 1.200,00"
-                    android:textColor="@android:color/holo_red_dark"
-                    android:textSize="16sp" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvExpense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="13dp"
+                        android:text="Despesas"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvExpenseAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="R$ 1.200,00"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="16sp" />
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
 
@@ -259,7 +291,7 @@
         <!-- Aqui você pode usar uma ImageView para exibir o gráfico de pizza, ou utilizar uma biblioteca para gráficos -->
         <ImageView
             android:id="@+id/ivPieChart"
-            android:layout_width="100dp"
+            android:layout_width="120dp"
             android:layout_height="100dp"
             android:layout_gravity="center_horizontal"
             android:contentDescription="@string/category"
@@ -280,7 +312,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginBottom="4dp">
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="50dp">
 
                 <TextView
                     android:id="@+id/tvFoodLabel"
@@ -294,7 +327,7 @@
                     android:id="@+id/tvFoodExpense"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="R$ 420,00"
+                    android:text="-R$ 420,00"
                     android:textSize="16sp"
                     android:layout_gravity="end" />
             </LinearLayout>
@@ -304,7 +337,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginBottom="4dp">
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="50dp">
 
                 <TextView
                     android:id="@+id/tvHousingLabel"
@@ -318,7 +352,7 @@
                     android:id="@+id/tvHousingExpense"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="R$ 380,00"
+                    android:text="-R$ 380,00"
                     android:textSize="16sp"
                     android:layout_gravity="end" />
             </LinearLayout>
@@ -328,11 +362,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginBottom="4dp">
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="50dp">
 
                 <TextView
                     android:id="@+id/tvTransportLabel"
-                    android:layout_width="121dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Transporte"
@@ -342,7 +377,7 @@
                     android:id="@+id/tvTransportExpense"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="R$ 270,00"
+                    android:text="-R$ 270,00"
                     android:textSize="16sp"
                     android:layout_gravity="end" />
             </LinearLayout>
@@ -352,7 +387,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginBottom="4dp">
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="50dp">
+
 
                 <TextView
                     android:id="@+id/tvLeisureLabel"
@@ -366,7 +403,7 @@
                     android:id="@+id/tvLeisureExpense"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="R$ 130,00"
+                    android:text="-R$ 130,00"
                     android:textSize="16sp"
                     android:layout_gravity="end" />
             </LinearLayout>
@@ -409,10 +446,19 @@
             android:orientation="horizontal"
             android:layout_marginBottom="3dp">
 
+            <ImageView
+                android:id="@+id/ColorRed"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:contentDescription="Histórico"
+                android:src="@drawable/color_red_image" />
+
 
             <TextView
                 android:id="@+id/tvSpotify"
                 android:layout_width="0dp"
+                android:layout_marginStart="5dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Spotify"
@@ -441,8 +487,17 @@
             android:orientation="horizontal"
             android:layout_marginBottom="8dp">
 
+            <ImageView
+                android:id="@+id/ColorRed2"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:contentDescription="Histórico"
+                android:src="@drawable/color_red_image" />
+
             <TextView
                 android:id="@+id/tvGym"
+                android:layout_marginStart="5dp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -483,9 +538,18 @@
             android:orientation="horizontal"
             android:layout_marginBottom="3dp">
 
+            <ImageView
+                android:id="@+id/ColorRed4"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:contentDescription="Histórico"
+                android:src="@drawable/color_green" />
+
             <TextView
                 android:id="@+id/tvLunch"
                 android:layout_width="0dp"
+                android:layout_marginStart="5dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Cajuzada"
@@ -494,6 +558,7 @@
             <TextView
                 android:id="@+id/tvLunchTime"
                 android:layout_width="0dp"
+                android:layout_marginStart="5dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="06:99"
@@ -504,7 +569,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="R$ 16,00"
+                android:text="R$ 616,00"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -513,9 +578,18 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
+            <ImageView
+                android:id="@+id/ColorRed5"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:contentDescription="Histórico"
+                android:src="@drawable/color_green" />
+
             <TextView
                 android:id="@+id/tvSalary"
                 android:layout_width="0dp"
+                android:layout_marginStart="5dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Salário"
